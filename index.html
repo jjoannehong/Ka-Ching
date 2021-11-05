@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ka-Ching!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html"><img src="assets/logo.png" class="logo"></a>
+      <div class="pagelinks"> 
+        <a href="index.html" class="pagelink" style= "text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 6px;">BUDGET</a>
+        <a href="learn.html" class="pagelink">LEARN</a>
+       <a href="login.html" class="Login">Log in</a>
+      </div>
+    </div>
+    <div class="pagetitle" style= "text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 12px;">Monthly Budget</div>
+    <div style="display: flex; flex-direction: row; justify-content: space-around;">
+    <form class="budgetform">
+      <label class="budgetlabels" for="total">Total Budget:</label>
+      <input class="forminput" type="number" id="total" placeholder="$" name="total" min="0.00"><br><hr size= "5" width="100%" color="#6B9064"><br>
+      <label class="budgetlabels" for="h">Housing:</label>
+      <input  class="forminput" type="number" id="h" placeholder="$" name="h" min="0.00"><br><br>
+      <label class="budgetlabels" for="u">Utilities:</label>
+      <input class="forminput"  type="number" id="u" placeholder="$" name="u" min="0.00"><br><br>
+      <label class="budgetlabels" for="f">Food:</label>
+      <input class="forminput"  type="number" id="f" placeholder="$" name="f" min="0.00"><br><br>
+      <label class="budgetlabels"for="p">Personal:</label>
+      <input class="forminput"  type="number" id="p" placeholder="$" name="p" min="0.00"><br><br>
+      <label class="budgetlabels"for="t">Transportation:</label>
+      <input class="forminput"  type="number" id="t" placeholder="$" name="t" min="0.00"><br><br>
+      <label class="budgetlabels"for="d">Debt:</label>
+      <input class="forminput"  type="number" id="d" placeholder="$" name="d" min="0.00"><br><br>
+      <label class="budgetlabels"for="s">Savings:</label>
+      <input class="forminput"  type="number" id="s" placeholder="$" name="s" min="0.00"><br><br><div style="display:flex; justify-content:center;">
+      <input onclick="budgetCalc()"  id="submit-budget" type="button" value="Submit"></div>
+    </form>
+    
+<div>
+<div class="spendingheader">Spending Tracker</div>
+<div class="tablecontainer">
+<div class="tableheading">
+  <div>Category</div>
+  <div>Amount</div>
+  <div>Date</div></div>
+<table id="spendingtable">
+</table></div>
+<div class="spendingtracker">
+  <h2 style="margin:5px">Add a new spending:</h2>
+  <select name="type" id="type">
+    <optgroup label="Type">
+      <option value="H">H</option>
+      <option value="U">U</option>
+      <option value="F">F</option>
+      <option value="P">P</option>
+      <option value="T">T</option>
+      <option value="D">D</option>
+      <option value="S">S</option>
+    </optgroup>
+  </select>
+  <input type="number" min="0" id="spent" placeholder="$">
+  <input type="date" id="date">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div></div></div>
+
+<!--remaining budget table-->
+
+<div class="tabletitle" style= "text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 12px;">Remaining Budget</div>
+
+<table id="remainingtable">
+  <tr>
+    <th style="border-radius: 20px 0px 0px 0px;">Total</th>
+    <th>H</th>
+    <th>U</th>
+    <th>F</th>
+    <th>P</th>
+    <th>T</th>
+    <th>D</th>
+    <th style="border-radius: 0px 20px 0px 0px;">S</th>
+  </tr>
+  <tr>
+    <td id="one" style="border-radius: 0px 0px 0px 20px;">&nbsp</td>
+    <td id="two">&nbsp</td>
+    <td id="three">&nbsp</td>
+    <td id="four">&nbsp</td>
+    <td id="five">&nbsp</td>
+    <td id="six">&nbsp</td>
+    <td id="seven">&nbsp</td>
+    <td id="eight" style="border-radius: 0px 0px 20px 0px;">&nbsp</td>
+  </tr>
+</table>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

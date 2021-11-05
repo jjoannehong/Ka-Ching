@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ka-Ching!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html"><img src="assets/logo.png" class="logo"></a>
+      <div class="pagelinks"> 
+        <a href="index.html" class="pagelink">BUDGET</a>
+        <a href="learn.html" class="pagelink" style= "text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 6px;">LEARN</a>
+        <a href="login.html" class="Login">Log in</a>
+      </div>
+    </div>
+
+		<div>
+			
+			<h1 id="learn-title" style= "text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 12px;">How to Manage Your Money</h2>
+
+			<div class="fact-generator">
+				<div class="informheading">Did you know?</div>
+				<button class="informbtn" onclick="newFact()">Click Me!</button>
+				<div id="factGen"></div>
+			</div>
+
+			<div class="budget-flexbox">
+				
+				
+				<div class="budget-section">
+					<h2 class="section-titles">Budgeting 101: How to Budget Money</h2>
+			
+					<p class="section-info">Budgeting is a great way to combat money stress and achieve financial freedom. With a set budget, you are creating a plan for every dollar you have. There are multiple ways to budget, but here are a few of the most common methods: </p>
+
+					<h3 class="section-subtitles">50/30/20 Rule</h3>
+					<p class="section-info">To use this budgeting method, you first have to calculate your monthly income after taxes. In this method, 50% of your income goes to necessities, 30% goes to wants, and 20% goes to savings. In the long run, if you use this method, you will have saved up money to tackle unexpected expenses, manageable debt if any, and the ability to fulfill your wants financially.</p>
+
+					<h3 class="section-subtitles">Envelope System</h3>
+					<p class="section-info">In this system, you take envelopes and sort them by category of expenses. For example, one envelope will go to groceries, another to rent, etc. Next, you place money you plan to spend in each category. Traditionally, people use cash money, but others are opting for digital methods, like this website, “Ka-Ching!” to manage their budgets.</p>
+
+					<h3 class="section-subtitles">80/20 Plan</h3>
+					<p class="section-info">This budget plan is the simplest method of budgeting. Here, 20% of your income goes into your savings, and the remaining 80% is money you spend however you see fit. A valuable trick is to set up automatic withdrawals of 20% of each paycheck to be deposited into a savings account. This way you will always have money saved and won’t have as many limitations with the remaining 80% of your money.</p>
+
+					<button id="budget-button"><a href="index.html" id="budget-link">Get Started</a></button>
+				</div>
+				
+				<img id="budgetGraphic" src="assets/Piggy.png" alt="gold coins falling">
+				
+			</div>
+
+			
+			<div class="debt-flexbox">
+				<img id="debtGraphic" src="assets/DebtGraphic.png" alt="Man holding huge boulder titled 'debt' over his back">
+
+				<div class="debt-section">
+					<h2 class="section-titles">How to Tackle Debt</h2>
+					
+					<p class="section-info">Debt is overwhelming and can cause a lot of stress. At times, it feels impossible to pay it off, but where there’s a will, there's a way. Here are a couple of the most common methods to tackle debt:</p>
+
+					<h3 class="section-subtitles">Snowball Method</h3>
+					<p class="section-info">The snowball method is when you pay off your debts from the smallest balance to the largest. To use this method, first make all of the minimum payments on all of your accounts. Then, pay as much as you can to the smallest balance. After you paid off the smallest balance, repeat the steps with the next smallest balance. This method is great for those who want motivation from a series of small successes at the beginning. Another advantage of this method is that your credit score may increase more quickly.</p>
+
+					<h3 class="section-subtitles">Avalanche Method</h3>
+					<p class="section-info">The avalanche method is when you pay off your debts from the highest interest rate to the lowest. To use this method, first make all of the minimum payments on all of your accounts. Then, pay as much as you can to the account with the highest interest rate. After you paid off that account, repeat the steps with the next highest rate balance. Although it may take some time to see progress,  when you pay off your first few you’ll gain quite the momentum.</p>
+
+					<button id="debt-button"><a href="https://www.creditcardinsider.com/learn/reducing-debt/" id="budget-link" target="_blank">Learn More</a></button>
+				</div>
+			</div>
+
+		</div>
+    <script src="script.js"></script>
+  </body>
+</html>
